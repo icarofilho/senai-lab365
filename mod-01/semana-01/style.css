@@ -1,0 +1,74 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #333;
+}
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+#semana1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.aprovado {
+  background-image: linear-gradient(
+    215deg,
+    #00ffff 0,
+    #41f5ff 25%,
+    #53bcf2 50%,
+    #5087ab 75%,
+    #425a6e 100%
+  );
+}
+
+.reprovado {
+  background-image: radial-gradient(
+    circle at 4.55% 104.17%,
+    #ea42b8 0,
+    #f33aa8 7.14%,
+    #fa3498 14.29%,
+    #fe3187 21.43%,
+    #ff3276 28.57%,
+    #ff3666 35.71%,
+    #fd3d56 42.86%,
+    #f94646 50%,
+    #f34f36 57.14%,
+    #ec5825 64.29%,
+    #e36110 71.43%,
+    #d96a00 78.57%,
+    #ce7200 85.71%,
+    #c17900 92.86%,
+    #b48000 100%
+  );
+}
+
+.card-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-data > p {
+  margin: 5px;
+  padding: 0;
+}
