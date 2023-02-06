@@ -1,6 +1,6 @@
 //! Semana 1
 //* Exercício 1
-console.log("Exercício 1");
+console.log("# Exercício 1\n");
 const listOfStudents = [
   {
     nome: "Alice Milena Tatiane Araújo",
@@ -140,7 +140,7 @@ listOfStudents.forEach((student) => {
 });
 
 //* Exercício 2
-console.log("\nExercício 2");
+console.log("\n# Exercício 2\n");
 
 for (index in listOfStudents) {
   listOfStudents[index]["Matemática"] = {
@@ -156,51 +156,12 @@ for (index in listOfStudents) {
 }
 
 //* Exercício 3
-console.log("\nExercício 3");
+console.log("\n# Exercício 3\n");
 
 for (std of listOfStudents) {
   const { media } = std["Matemática"];
   std["Matemática"]["aprovado"] = media >= 7 ? true : false;
-  if (media >= 7) {
-    console.log(
-      std.nome + `: ${media >= 7 ? "%caprovado" : "%creprovado"}`,
-      "background: 	#00BFFF; color: #000"
-    );
-  } else {
-    console.log(
-      std.nome + `: ${media >= 7 ? "%caprovado" : "%creprovado"}`,
-      "background: #FF4500; color: #FFF"
-    );
-  }
+  media >= 7
+    ? console.log(std.nome + `: ${media >= 7 ? "Aprovado" : "Reprovado"}`)
+    : console.log(std.nome + `: ${media >= 7 ? "Aprovado" : "Reprovado"}`);
 }
-
-//* Extra
-const containerS1Ex1 = document.getElementById("semana1");
-const cards = listOfStudents.map((std) => {
-  const status = std["Matemática"].aprovado == true ? "aprovado" : "reprovado";
-  const { nota1, nota2, media } = std["Matemática"];
-
-  return `<div class='card-container ${status}'>
-            <div>
-              <p>Nome: ${std.nome}</p>
-            </div>
-            <div class='card-data'>
-              <p>Altura: ${std.altura}</p>
-              <p>Idade: ${std.idade}</p>
-            </div>
-            <div class='card-data'>
-              <p>Sexo: ${std.sexo}</p>
-              <p>Sala: ${std.numero}</p>
-            </div>
-            <div class='card-data'>
-              <p>nota 1: ${nota1}</p>
-              <p>nota 2: ${nota2}</p>
-              <p>media: ${media}</p>
-            </div>
-            <div class='card-data'>
-              <p>O aluno foi ${status}</p>
-            </div>
-        </div>`;
-});
-
-containerS1Ex1.innerHTML += cards.join("");

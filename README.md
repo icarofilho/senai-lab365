@@ -1,5 +1,5 @@
 <div>
-  <h2 style="text-align: center;">Lab365</h2>
+  <h2 align="center">Lab365</h2>
 </div>
 <div>
   <h4>About Lab365</h4>
@@ -29,7 +29,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>01</td>
+        <td align="center">01</td>
         <td>30/jan - 03/feb</td>
         <td><a href="./mod-01/semana-01">Link</a></td>
       </tr>
