@@ -33,6 +33,12 @@
         <td>30/jan - 03/feb</td>
         <td><a href="./mod-01/semana-01">Link</a></td>
       </tr>
+    <tbody>
+      <tr>
+        <td align="center">02</td>
+        <td>06/feb - 10/feb</td>
+        <td><a href="./mod-01/semana-02">Link</a></td>
+      </tr>
     </tbody>
   </table>
 </details>
