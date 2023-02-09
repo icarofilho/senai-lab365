@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <!-- JS -->
+    <script src="page2.js" defer></script>
+    <title>M1S02-Ex02</title>
+  </head>
+  <body>
+    <main>
+      <form action="" id="profile-form">
+        <section class="header">
+          <img src="" id="avatar-photo" />
+          <h1 id="user-name"></h1>
+        </section>
+        <section class="body">
+          <div>
+            Avatar:
+            <input type="url" name="avatar" id="avatar-input" />
+            <button onclick="preview()">Visualizar</button>
+          </div>
+          <div>
+            Display Name:
+            <input
+              type="text"
+              name="display-name"
+              id="display-name"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            *Old password:
+            <input
+              type="password"
+              name="old-password"
+              id="old-password"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            New password:
+            <input
+              type="password"
+              name="new-password"
+              id="new-password"
+              autocomplete="off"
+            />
+          </div>
+        </section>
+        <span
+          >*OBS: para fazer alterações é necessário inserir a senha atual no
+          campo "Old Password".</span
+        >
+        <section class="footer">
+          <button onclick="store()">Save</button>
+          <button onclick="logout()">Logout</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

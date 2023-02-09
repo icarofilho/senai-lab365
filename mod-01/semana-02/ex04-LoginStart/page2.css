@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1.3rem;
+  border-bottom: 1px solid rgba(245, 40, 145, 0.32);
+}
+
+.header > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.header > h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.body > div {
+  margin: 5px;
+  padding: 5px;
+}
+.footer {
+  display: flex;
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 400px;
+}
+
+button {
+  cursor: pointer;
+  background: #7f3667;
+  height: 1.5rem;
+  color: #fff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0.7rem;
+}
+
+button:hover {
+  background: #a53e76;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+button:active {
+  background: #e2619f;
+}
