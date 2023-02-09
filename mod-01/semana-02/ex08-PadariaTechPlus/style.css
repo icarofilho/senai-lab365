@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+main {
+  background-image: url(https://lab365.tech/wp-content/uploads/sites/5/2022/07/capa_site.png);
+  background-size: cover;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  text-align: center;
+}
+
+/* .header > button {
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+
+} */
+.body {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 500px;
+  min-height: 150px;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.body > span {
+  background: #8f0656;
+  border-radius: 0.7rem;
+  box-shadow: rgba(52, 4, 49, 0.9) 0px 14px 28px,
+    rgba(52, 4, 49, 0.22) 0px 10px 10px;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  max-width: 100%;
+  height: 100%;
+}
+
+.header > button {
+  margin-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+  background: #7f3667;
+  height: 1.5rem;
+  color: #fff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0.2rem;
+}
+
+.header > button:hover {
+  border-radius: 0.3rem;
+  background: #a53e76;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.header > button:active {
+  border-radius: 0.5rem;
+  background: #e2619f;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > div {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > div {
+  margin: 1rem 1rem 0.3rem 1rem;
+  padding: 0 0 0.3rem 0;
+  border-bottom: 1px solid #e2619f;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.text {
+  color: #340431;
+}
