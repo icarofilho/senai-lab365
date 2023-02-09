@@ -74,20 +74,23 @@ main {
   background: #e2619f;
 }
 
-.footer {
+.footer,
+.footer2 {
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer > div {
+.footer > div,
+.footer2 > div {
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer > div {
+.footer > div,
+.footer2 > div {
   margin: 1rem 1rem 0.3rem 1rem;
   padding: 0 0 0.3rem 0;
   border-bottom: 1px solid #e2619f;

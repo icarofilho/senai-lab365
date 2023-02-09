@@ -1,11 +1,28 @@
 function shopping() {
   addItensToCart();
-  checkout();
+  const total = checkout();
+  const cash = pay();
+  const payback = cash - total;
+  payBack(cash, payback);
+}
+
+function pay() {
+  let cash;
+  do {
+    cash = prompt("Com quanto irá pagar ?");
+  } while (!cash);
+  return parseFloat(formatPrice(cash));
+}
+
+function payBack(cash, payback) {
+  document.querySelector("#footer2").innerHTML += `<div>
+    <span class='text'>Pago: ${cash.toFixed(2)}</span>
+    <span class='text'>Troco: R$ ${payback.toFixed(2)}</span>
+  </div>`;
 }
 
 function checkout() {
   const cart = getFromLocalStorage();
-  console.log(cart);
 
   const total = cart.reduce((acc, price) => {
     return parseFloat(acc) + parseFloat(price);
@@ -17,6 +34,7 @@ function checkout() {
     <span class='text'>Total da compra: R$ ${total.toFixed(2)}</span>
   </div>`;
   addCards(cart);
+  return total;
 }
 
 function addCards(arr) {
