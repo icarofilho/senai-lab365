@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <title>Gerador Link Whatsapp</title>
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <div>
+          <input type="text" id="phone">
+          <table>
+            <tr>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="1">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="2">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="3">
+              </td>
+            </tr>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="4">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="5">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="6">
+              </td>
+            </tr>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="7">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="8">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="9">
+              </td>
+            </tr>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="+">
+              </td>
+              <td>
+                <input type="button" onclick="handlerAddNumber(this)" value="0">
+              </td>
+              <td>
+                <input type="button" onclick="handlerRemoveNumber()" value="<">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        
+      </form>
+      <input type="submit" onclick="generate()" value="Generate" />
+      <div id="link"></div>
+    </main>
+  </body>
+</html>
