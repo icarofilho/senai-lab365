@@ -55,10 +55,34 @@ Agora para deixar nossa aplicação do exercício anterior mais completa, na rot
 
 #### Utilização
 
+Para clonar o repositório, basta utilizarmos o seguinte comando no terminal:
+
+```shell
+git clone https://github.com/icarofilho/senai-lab365
+```
+
+para rodarmos o servidor precisamos primeiro navegar até o diretório do exercício, na pasta raiz daremos o seguinte comando:
+
+```shell
+cd .\mod-01\semana-06\Ex06-07-08-Criando-uma-API\
+```
+
+Uma vez dentro da pasta do projeto, precisamos instalar as dependencias, para isso utilizamos o gerenciador de pacotes.
+
+```shell
+yarn
+```
+
+Com os pacotes instalados, basta iniciar o servidor
+
+```shell
+yarn dev
+```
+
 O projeto comporta três ações, sendo elas: Adicionar, Remover e Listar
 
-- Adicionado um usuário (sem validação de cargo).
-  Acessamos o ENDPOINT: **`http://localhost:3333/add`** com o verbo `POST`
+- **_Adicionado um usuário (sem validação de cargo)._**
+  Acessamos o ENDPOINT: **`http://localhost:3333/v1/add`** com o verbo `POST`
   Para adicionar um novo usuário, será obrigatório informa um objeto com as seguintes propriedades:
 
   ```json
@@ -70,8 +94,8 @@ O projeto comporta três ações, sendo elas: Adicionar, Remover e Listar
   }
   ```
 
-- Adicionando um usuário (com validação de cargo).
-  Acessamos o ENDPOINT: **`http://localhost:3333/add-lider`** com o verbo `POST`
+- **_Adicionando um usuário (com validação de cargo)._**
+  Acessamos o ENDPOINT: **`http://localhost:3333/v1/add-lider`** com o verbo `POST`
   Para adicionar um novo usuário, será obrigatório informa um objeto com as seguintes propriedades (lembrando que o valor do cargo deve ser obrigatoriamente `lider`):
 
   ```json
@@ -83,9 +107,9 @@ O projeto comporta três ações, sendo elas: Adicionar, Remover e Listar
   }
   ```
 
-- Exibindo usuários cadastrados:
-  Para exibir os usuários cadastrados basta acessar o ENDPOINT `http://localhost:3333/show` com o verbo `GET`
+- **_Exibindo usuários cadastrados:_**
+  Para exibir os usuários cadastrados basta acessar o ENDPOINT `http://localhost:3333/v1/show` com o verbo `GET`
 
-- Removendo um usuário:
-  Para removermos um usuário, devemos informar o seu ID por **_Query_** com o ENDPOINT: `http://localhost:3333/delete?id=x` , onde `X` é o numero do ID do usuário
+- **_Removendo um usuário:_**
+  Para removermos um usuário, devemos informar o seu ID por **_Query_** com o ENDPOINT: `http://localhost:3333/delete?id=x` passando o verbo DELETE, onde `X` é o numero do ID do usuário
   (**OBS:** Caso queira saber o ID de um usuário, basta utilizar a _listagem de usuários_)
