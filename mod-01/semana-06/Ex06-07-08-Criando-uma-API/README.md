@@ -111,5 +111,5 @@ O projeto comporta três ações, sendo elas: Adicionar, Remover e Listar
   Para exibir os usuários cadastrados basta acessar o ENDPOINT `http://localhost:3333/v1/show` com o verbo `GET`
 
 - **_Removendo um usuário:_**
-  Para removermos um usuário, devemos informar o seu ID por **_Query_** com o ENDPOINT: `http://localhost:3333/delete?id=x` passando o verbo DELETE, onde `X` é o numero do ID do usuário
+  Para removermos um usuário, devemos informar o seu ID por **_Query_** com o ENDPOINT: `http://localhost:3333/v1/delete?id=x` passando o verbo DELETE, onde `X` é o numero do ID do usuário
   (**OBS:** Caso queira saber o ID de um usuário, basta utilizar a _listagem de usuários_)
